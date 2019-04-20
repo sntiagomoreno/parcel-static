@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		{{#block "meta"}} {{> meta}} {{/block}}
+		{{#block "favicons"}} {{> favicons}} {{/block}}
+		{{#block "title"}} <title>{{title}}</title> {{/block}}
+		<link rel="stylesheet" href="../../styles/main.scss">
+	</head>
+	<body>
+		<article id="wrapper">
+			<main class="container" {{#if namespace}} data-namespace={{namespace}} {{/if}}>
+				{{> header }}
+				{{#> body}}{{/body}}
+				{{> footer }}
+			</main>
+		</article>
+	</body>
+</html>

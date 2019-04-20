@@ -1,0 +1,17 @@
+---
+meta:
+  author: Author Name
+  description: Some meta description
+  keywords: Some, Meta, Keywords
+  robots: index, follow
+title: About | Static Parcel
+pagetitle: About
+uri: /about
+---
+
+{{#> layout namespace="about"}}
+	{{#*inline "body"}}
+		<h1>{{pagetitle}}</h1>
+		<p>Hello</p>
+	{{/inline}}
+{{/layout}}

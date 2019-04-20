@@ -1,0 +1,20 @@
+ {{#if src}}
+    <figure class="img-wrapper" data-inview="false">
+        <div class="img-container">
+            {{#if lowres}}
+            <img class="lozad" data-src={{src}}/>
+            <img class="placeholder" src={{lowres}} alt="">
+            {{else}}
+            <img class="placeholder" src={{src}} alt="">
+            {{/if}}
+            <noscript>
+                <img src={{src}} alt="">
+            </noscript>
+        </div>
+        {{#if caption}}
+            <figcaption>
+                {{caption}}
+            </figcaption>
+        {{/if}}
+    </figure>
+ {{/if}}
